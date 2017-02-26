@@ -8,7 +8,7 @@ var output = './public/scripts';
 
 gulp.task('pug', function() {
   gulp
-  .src('public/index.pug')
+  .src('app/layout/index.pug')
   .pipe(pug())
   .pipe(gulp.dest('public/'));
 });

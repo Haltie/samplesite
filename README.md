@@ -5,4 +5,11 @@ gulp + riot.js + pug を使ってお試しサイト作るテスト
 アニメーション周りは今回は気にしない  
 
 各tagの構成はこんな感じ(の予定)  
+
+- app-main
+	- app-menu
+	- app-content
+		- app-single
+		- app-side
+
 ![](http://study.lugn-design.com/site/samplesite/public/images/readme/site.jpg)
