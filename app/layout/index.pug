@@ -1,15 +1,21 @@
+doctype html
+
 html(lang="ja")
+  head
+    meta(charset='utf-8')
+    meta(name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1")
+    meta(name="apple-mobile-web-app-capable" content="yes")
 
-head
-  script(src='https://cdnjs.cloudflare.com/ajax/libs/jade/1.11.0/jade.js')
-  script(src='https://cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js')
-  script(src='https://cdnjs.cloudflare.com/ajax/libs/riot/3.2.1/riot+compiler.min.js')
-  style(src="plugin/high.css/high.css")
-  title Riot&Pug Sample
-  meta(charset='utf-8')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jade/1.11.0/jade.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/riot/3.2.1/riot+compiler.min.js')
 
-body
-  app
+    style(src="plugin/high.css/high.css")
 
-  script(src="scripts/tags.js")
-  script(src="scripts/main.js")
+    title Riot&Pug Sample
+
+  body
+    app
+
+    script(src="scripts/tags.js")
+    script(src="scripts/main.js")
