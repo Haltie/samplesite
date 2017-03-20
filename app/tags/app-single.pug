@@ -13,7 +13,6 @@ app-single.flex-fixed.col9
           console.log("tagName:" + tagName + ", id:" + id + ", action:" + action);
 
           var page = $('div.swap-content');
-          page.appendChild(document.createElement('div'));
           console.log(page)
 
           riot.mount(page, tagName);
@@ -22,6 +21,7 @@ app-single.flex-fixed.col9
       route.start(true);
     });
 
+    // 参考: http://qiita.com/kz_morita/items/13dca459c2e762ec6e0b
     function $(selector, ctx) {
       return (ctx || document).querySelector(selector)
     }
@@ -40,7 +40,7 @@ page
   p つれづれなるまゝに、日暮らし、硯にむかひて、心にうつりゆくよしなし事を、そこはかとなく書きつくれば、あやしうこそものぐるほしけれ。（Wikipediaより）
 
 item
-  p item!
+  p item
   br
   p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
   p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
