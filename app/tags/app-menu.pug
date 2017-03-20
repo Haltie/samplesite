@@ -1,22 +1,32 @@
 app-menu.flex-fixed.col3.h100vh.fixed.text-center.p20.mt50
-
-  h1.mb20
-    a.fs18(href="http://study.lugn-design.com/site/samplesite/public") Site Name
-
-  ul
-    li
-      a(href="#") home
-    li
-      a(href="#hoge/1?hoge=100") hoge
-    li
-      a(href="#page/2?hoge=200") page
-    li
-      a(href="#item/3?hoge=300") item
+  nav.p20.w80per
+    h1.mb40
+      a.fs18(href="http://study.lugn-design.com/site/samplesite/public") Site Name
+    p.fs12 Menu
+    ul
+      li.border-bottom.p5
+        a(href="#") home
+      li.border-bottom.p5
+        a(href="#hoge/1?hoge=100") hoge
+      li.border-bottom.p5
+        a(href="#page/2?hoge=200") page
+      li.border-bottom.p5
+        a(href="#item/3?hoge=300") item
 
   style(scoped).
+    nav {
+      background-color: #ffc000;
+    }
     h1 {
+      color: #666;
       line-height: 0.7;
+    }
+    p {
+      color: #666;
     }
     ul {
       list-style: none;
+    }
+    li a{
+      color: white;
     }
