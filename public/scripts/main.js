@@ -1,1 +1,1 @@
-var tags = riot.mount('*');
+var tags = riot.mount('app');

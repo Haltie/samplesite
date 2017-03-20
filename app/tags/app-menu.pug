@@ -1,2 +1,19 @@
-app-menu
-  p menu!
+app-menu.flex-fixed.col3.h100vh.fixed.text-center.p20.mt40
+
+  h1.mb20
+    a(href="http://study.lugn-design.com/site/samplesite/public") SiteName
+
+  ul
+    li
+      a(href="#") home
+    li
+      a(href="#hoge/1?hoge=100") hoge
+    li
+      a(href="#page/2?hoge=200") page
+    li
+      a(href="#item/3?hoge=300") item
+
+  style(scoped).
+    ul {
+      list-style: none;
+    }
